@@ -1,6 +1,6 @@
 const swconf = {
   
-    cacheName: 'chirpy-1712689173',resources: [
+    cacheName: 'chirpy-1712693455',resources: [
       '/assets/css/jekyll-theme-chirpy.css',
       '/',
       
@@ -29,13 +29,7 @@ const swconf = {
         '/assets/js/dist/post.min.js'
     ],allowHosts: [
       
-        'TaoAI.github.io',
-      
-          'fonts.googleapis.com',
-          'fonts.gstatic.com',
-          'fonts.googleapis.com',
-          'cdn.jsdelivr.net',
-          'cdnjs.cloudflare.com'
+        'tao-ai-group.github.io',
       
     ],denyPaths: [
       
