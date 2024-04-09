@@ -23,7 +23,7 @@ description: >- # used by seo meta and the atom feed
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://TaoAI.github.io"
+url: "https://tao-ai-group.github.io"
 
 github:
   username: jingnafeng # change to your github username
@@ -71,7 +71,7 @@ theme_mode: light # [light | dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: "https://TaoAI.github.io/home"
+img_cdn: "https://tao-ai-group.github.io/home"
 
 # the avatar on sidebar, support local or CORS resources
 avatar: "/assets/img/commons/avatar.jpg"
