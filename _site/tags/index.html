@@ -19,7 +19,7 @@ layout: compress
 
 
 <!-- `site.alt_lang` can specify a language different from the UI -->
-<html lang="en" data-mode="light">
+<html lang="en" >
   <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
@@ -39,15 +39,15 @@ layout: compress
 <meta property="og:locale" content="en" />
 <meta name="description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
 <meta property="og:description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<link rel="canonical" href="http://localhost:4000/tags/" />
-<meta property="og:url" content="http://localhost:4000/tags/" />
+<link rel="canonical" href="http://localhost:4000/home/tags/" />
+<meta property="og:url" content="http://localhost:4000/home/tags/" />
 <meta property="og:site_name" content="Tao AI Group" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-04-09T17:16:05-05:00" />
+<meta property="article:published_time" content="2024-04-09T18:03:37-05:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Tags" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-04-09T17:16:05-05:00","datePublished":"2024-04-09T17:16:05-05:00","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"Tags","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/tags/"},"url":"http://localhost:4000/tags/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-04-09T18:03:37-05:00","datePublished":"2024-04-09T18:03:37-05:00","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"Tags","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/home/tags/"},"url":"http://localhost:4000/home/tags/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -61,17 +61,17 @@ layout: compress
 
 
 
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/home/assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/home/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/home/assets/img/favicons/favicon-16x16.png">
 
-  <link rel="manifest" href="/assets/img/favicons/site.webmanifest">
+  <link rel="manifest" href="/home/assets/img/favicons/site.webmanifest">
 
-<link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+<link rel="shortcut icon" href="/home/assets/img/favicons/favicon.ico">
 <meta name="apple-mobile-web-app-title" content="Tao AI Group">
 <meta name="application-name" content="Tao AI Group">
 <meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
+<meta name="msapplication-config" content="/home/assets/img/favicons/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 
 
@@ -105,7 +105,7 @@ layout: compress
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
 
-  <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
+  <link rel="stylesheet" href="/home/assets/css/jekyll-theme-chirpy.css">
 
   
 
@@ -114,6 +114,151 @@ layout: compress
   
 
   <!-- JavaScript -->
+
+  
+    <!-- Switch the mode between dark and light. -->
+
+<script type="text/javascript">
+  class ModeToggle {
+    static get MODE_KEY() {
+      return 'mode';
+    }
+    static get MODE_ATTR() {
+      return 'data-mode';
+    }
+    static get DARK_MODE() {
+      return 'dark';
+    }
+    static get LIGHT_MODE() {
+      return 'light';
+    }
+    static get ID() {
+      return 'mode-toggle';
+    }
+
+    constructor() {
+      if (this.hasMode) {
+        if (this.isDarkMode) {
+          if (!this.isSysDarkPrefer) {
+            this.setDark();
+          }
+        } else {
+          if (this.isSysDarkPrefer) {
+            this.setLight();
+          }
+        }
+      }
+
+      let self = this;
+
+      /* always follow the system prefers */
+      this.sysDarkPrefers.addEventListener('change', () => {
+        if (self.hasMode) {
+          if (self.isDarkMode) {
+            if (!self.isSysDarkPrefer) {
+              self.setDark();
+            }
+          } else {
+            if (self.isSysDarkPrefer) {
+              self.setLight();
+            }
+          }
+
+          self.clearMode();
+        }
+
+        self.notify();
+      });
+    } /* constructor() */
+
+    get sysDarkPrefers() {
+      return window.matchMedia('(prefers-color-scheme: dark)');
+    }
+
+    get isSysDarkPrefer() {
+      return this.sysDarkPrefers.matches;
+    }
+
+    get isDarkMode() {
+      return this.mode === ModeToggle.DARK_MODE;
+    }
+
+    get isLightMode() {
+      return this.mode === ModeToggle.LIGHT_MODE;
+    }
+
+    get hasMode() {
+      return this.mode != null;
+    }
+
+    get mode() {
+      return sessionStorage.getItem(ModeToggle.MODE_KEY);
+    }
+
+    /* get the current mode on screen */
+    get modeStatus() {
+      if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) {
+        return ModeToggle.DARK_MODE;
+      } else {
+        return ModeToggle.LIGHT_MODE;
+      }
+    }
+
+    setDark() {
+      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE);
+      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
+    }
+
+    setLight() {
+      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE);
+      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
+    }
+
+    clearMode() {
+      document.documentElement.removeAttribute(ModeToggle.MODE_ATTR);
+      sessionStorage.removeItem(ModeToggle.MODE_KEY);
+    }
+
+    /* Notify another plugins that the theme mode has changed */
+    notify() {
+      window.postMessage(
+        {
+          direction: ModeToggle.ID,
+          message: this.modeStatus
+        },
+        '*'
+      );
+    }
+
+    flipMode() {
+      if (this.hasMode) {
+        if (this.isSysDarkPrefer) {
+          if (this.isLightMode) {
+            this.clearMode();
+          } else {
+            this.setLight();
+          }
+        } else {
+          if (this.isDarkMode) {
+            this.clearMode();
+          } else {
+            this.setDark();
+          }
+        }
+      } else {
+        if (this.isSysDarkPrefer) {
+          this.setLight();
+        } else {
+          this.setDark();
+        }
+      }
+
+      this.notify();
+    } /* flipMode() */
+  } /* ModeToggle */
+
+  const modeToggle = new ModeToggle();
+</script>
 
   
 
@@ -127,10 +272,10 @@ layout: compress
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
   <header class="profile-wrapper">
-    <a href="/" id="avatar" class="rounded-circle"><img src="https://tao-ai-group.github.io/home/assets/img/commons/avatar.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
+    <a href="/home/" id="avatar" class="rounded-circle"><img src="https://tao-ai-group.github.io/home/assets/img/commons/avatar.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
 
     <h1 class="site-title">
-      <a href="/">Tao AI Group</a>
+      <a href="/home/">Tao AI Group</a>
     </h1>
     <p class="site-subtitle fst-italic mb-0">A team of talents who love AI and healthcare innovation!</p>
   </header>
@@ -140,7 +285,7 @@ layout: compress
     <ul class="nav">
       <!-- home -->
       <li class="nav-item">
-        <a href="/" class="nav-link">
+        <a href="/home/" class="nav-link">
           <i class="fa-fw fas fa-home"></i>
           <span>HOME</span>
         </a>
@@ -148,7 +293,7 @@ layout: compress
       <!-- the real tabs -->
       
         <li class="nav-item">
-          <a href="/team/" class="nav-link">
+          <a href="/home/team/" class="nav-link">
             <i class="fa-fw fa fa-users"></i>
             
 
@@ -158,7 +303,7 @@ layout: compress
         <!-- .nav-item -->
       
         <li class="nav-item">
-          <a href="/projects/" class="nav-link">
+          <a href="/home/projects/" class="nav-link">
             <i class="fa-fw fa fa-laptop"></i>
             
 
@@ -168,7 +313,7 @@ layout: compress
         <!-- .nav-item -->
       
         <li class="nav-item">
-          <a href="/categories/" class="nav-link">
+          <a href="/home/categories/" class="nav-link">
             <i class="fa-fw fas fa-stream"></i>
             
 
@@ -178,7 +323,7 @@ layout: compress
         <!-- .nav-item -->
       
         <li class="nav-item">
-          <a href="/publications/" class="nav-link">
+          <a href="/home/publications/" class="nav-link">
             <i class="fa-fw fa fa-pencil"></i>
             
 
@@ -188,7 +333,7 @@ layout: compress
         <!-- .nav-item -->
       
         <li class="nav-item">
-          <a href="/archives/" class="nav-link">
+          <a href="/home/archives/" class="nav-link">
             <i class="fa-fw fas fa-archive"></i>
             
 
@@ -198,7 +343,7 @@ layout: compress
         <!-- .nav-item -->
       
         <li class="nav-item active">
-          <a href="/tags/" class="nav-link">
+          <a href="/home/tags/" class="nav-link">
             <i class="fa-fw fas fa-tags"></i>
             
 
@@ -208,7 +353,7 @@ layout: compress
         <!-- .nav-item -->
       
         <li class="nav-item">
-          <a href="/about/" class="nav-link">
+          <a href="/home/about/" class="nav-link">
             <i class="fa-fw fas fa-id-card"></i>
             
 
@@ -221,6 +366,14 @@ layout: compress
   </nav>
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
+    
+      <button type="button" class="mode-toggle btn" aria-label="Switch Mode">
+        <i class="fas fa-adjust"></i>
+      </button>
+
+      
+        <span class="icon-border"></span>
+      
     
 
     
@@ -292,7 +445,7 @@ layout: compress
 
       
         <a
-          href="/feed.xml"
+          href="/home/feed.xml"
           aria-label="rss"
           
 
@@ -328,7 +481,7 @@ layout: compress
         
           
             <span>
-              <a href="/">Home</a>
+              <a href="/home/">Home</a>
             </span>
 
           
@@ -395,13 +548,13 @@ layout: compress
 
   
     <div>
-      <a class="tag" href="/tags/cdm/">
+      <a class="tag" href="/home/tags/cdm/">
         CDM<span class="text-muted">2</span>
       </a>
     </div>
   
     <div>
-      <a class="tag" href="/tags/phenotype/">
+      <a class="tag" href="/home/tags/phenotype/">
         phenotype<span class="text-muted">2</span>
       </a>
     </div>
@@ -439,14 +592,14 @@ layout: compress
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/ACTS-md/">ACTS</a>
+          <a href="/home/posts/ACTS-md/">ACTS</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/home_post/">AI for Alzheimer's disease</a>
+          <a href="/home/posts/home_post/">AI for Alzheimer's disease</a>
         </li>
       
     </ul>
@@ -502,10 +655,10 @@ layout: compress
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/cdm/">CDM</a>
+        <a class="post-tag btn btn-outline-primary" href="/home/tags/cdm/">CDM</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/phenotype/">phenotype</a>
+        <a class="post-tag btn btn-outline-primary" href="/home/tags/phenotype/">phenotype</a>
       
     </div>
   </section>
@@ -607,10 +760,10 @@ layout: compress
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/cdm/">CDM</a>
+        <a class="post-tag btn btn-outline-primary" href="/home/tags/cdm/">CDM</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/phenotype/">phenotype</a>
+        <a class="post-tag btn btn-outline-primary" href="/home/tags/phenotype/">phenotype</a>
       
     </div>
   </section>
@@ -717,7 +870,7 @@ layout: compress
 
 
 
-<script defer src="/assets/js/dist/commons.min.js"></script>
+<script defer src="/home/assets/js/dist/commons.min.js"></script>
 
 
 
@@ -740,7 +893,7 @@ layout: compress
   SimpleJekyllSearch({
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('search-results'),
-    json: '/assets/js/data/search.json',
+    json: '/home/assets/js/data/search.json',
     searchResultTemplate: '  <article class="px-1 px-sm-2 px-lg-4 px-xl-0">    <header>      <h2><a href="{url}">{title}</a></h2>      <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">        {categories}        {tags}      </div>    </header>    <p>{snippet}</p>  </article>',
     noResultsText: '<p class="mt-5">Oops! No results found.</p>',
     templateMiddleware: function(prop, value, template) {
