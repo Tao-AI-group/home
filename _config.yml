@@ -65,14 +65,14 @@ goatcounter:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode: light # [light | dark]
+theme_mode: # [light | dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: "https://tao-ai-group.github.io/"
+img_cdn: "https://tao-ai-group.github.io/home"
 
 # the avatar on sidebar, support local or CORS resources
 avatar: "/assets/img/commons/avatar.jpg"
@@ -115,18 +115,18 @@ assets:
 
 pwa:
   enabled: true # the option for PWA feature (installable)
-  cache:
-    enabled: true # the option for PWA offline cache
-    # Paths defined here will be excluded from the PWA cache.
-    # Usually its value is the `baseurl` of another website that
-    # shares the same domain name as the current website.
-    deny_paths:
-      # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
+  # cache:
+  #   enabled: true # the option for PWA offline cache
+  #   # Paths defined here will be excluded from the PWA cache.
+  #   # Usually its value is the `baseurl` of another website that
+  #   # shares the same domain name as the current website.
+  #   deny_paths:
+  #     # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
 paginate: 10
 
 # The base URL of your site
-baseurl: ""
+baseurl:"/home"
 
 # ------------ The following options are not recommended to be modified ------------------
 
