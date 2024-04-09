@@ -1,5 +1,4 @@
 ---
-# the default layout is 'page'
 layout: page
 icon: fa fa-users
 order: 1
