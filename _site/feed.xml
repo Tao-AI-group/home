@@ -1,0 +1,103 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>Tao AI Group</title>
+  <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
+  <updated>2024-04-09T16:53:32-05:00</updated>
+  <author>
+    <name>Jingna Feng</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
+  <rights> © 2024 Jingna Feng </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>ACTS</title>
+    <link href="http://localhost:4000/posts/ACTS-md/" rel="alternate" type="text/html" title="ACTS" />
+    <published>2024-04-05T16:06:00-05:00</published>
+  
+    <updated>2024-04-05T16:06:00-05:00</updated>
+  
+    <id>http://localhost:4000/posts/ACTS-md/</id>
+    <content src="http://localhost:4000/posts/ACTS-md/" />
+    <author>
+      <name>Jingna Feng</name>
+    </author>
+
+  
+    
+    <category term="AD" />
+    
+    <category term="ontology" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      ACTS: ACTS (AD Clinical Trial Simulation): Developing Advanced Informatics Approaches for an Alzheimer’s Disease Clinical Trial Simulation System
+
+Alzheimer’s disease (AD) is the most common cause (60%-80%) of dementia and the sixth leading cause of death in the United States.1 It afflicts about 44 million people worldwide, including 5.5 million in the United States. Currently, there is no cure...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>AI for Alzheimer's disease</title>
+    <link href="http://localhost:4000/posts/home_post/" rel="alternate" type="text/html" title="AI for Alzheimer&amp;apos;s disease" />
+    <published>2024-04-05T13:13:00-05:00</published>
+  
+    <updated>2024-04-05T13:13:00-05:00</updated>
+  
+    <id>http://localhost:4000/posts/home_post/</id>
+    <content src="http://localhost:4000/posts/home_post/" />
+    <author>
+      <name>Jingna Feng</name>
+    </author>
+
+  
+    
+    <category term="AD" />
+    
+    <category term="ontology" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Alzheimer’s disease
+
+
+  CICADA project
+  ACTS project
+
+
+
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
