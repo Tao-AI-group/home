@@ -7,7 +7,7 @@ date: 2024-04-05 13:13 -0500
 tags: team scientists
 ---
 
-| **Dr. Cui Tao** <br> Chair of AI&I     | <img src="/assets/img/headshot/cuitao.jpeg" alt="Dr Cui Tao" width="200" height="auto"> |
+| **Dr. Cui Tao** <br> Chair of AI&I     | <img src="/assets/img/headshot/cuitao.jpeg" alt="Dr Cui Tao" width="80" height="auto"> |
 | **Dr. Fang Li** <br> Co-Investigator   | <img src="/assets/img/headshot/fangli.jpeg" alt="Dr Fang Li" width="80" height="auto"> | 
 | **Dr. Jianfu Li** <br> Co-Investigator   | <img src="/assets/img/headshot/wildcard_icon.jpg" alt="Dr Jianfu Li" width="100" height="auto"> | 
 | **Dr. Yue Yu** <br> Bioinformatician   | <img src="/assets/img/headshot/wildcard_icon.jpg" alt="Dr Yue Yu" width="100" height="auto"> | 
