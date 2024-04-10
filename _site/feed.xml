@@ -4,7 +4,7 @@
   <id>http://localhost:4000/home/</id>
   <title>Tao AI Group</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-04-10T09:51:57-05:00</updated>
+  <updated>2024-04-10T16:54:07-05:00</updated>
   <author>
     <name>Jingna Feng</name>
     <uri>http://localhost:4000/home/</uri>
@@ -58,8 +58,8 @@ Alzheimer’s disease (AD) is the most common cause (60%-80%) of dementia and th
 
   
   <entry>
-    <title>AI for Alzheimer's disease</title>
-    <link href="http://localhost:4000/home/posts/home_post/" rel="alternate" type="text/html" title="AI for Alzheimer&amp;apos;s disease" />
+    <title>Ontology</title>
+    <link href="http://localhost:4000/home/posts/home_post/" rel="alternate" type="text/html" title="Ontology" />
     <published>2024-04-05T13:13:00-05:00</published>
   
     <updated>2024-04-05T13:13:00-05:00</updated>
@@ -71,6 +71,8 @@ Alzheimer’s disease (AD) is the most common cause (60%-80%) of dementia and th
     </author>
 
   
+    
+    <category term="SDoH" />
     
     <category term="AD" />
     
@@ -86,14 +88,12 @@ Alzheimer’s disease (AD) is the most common cause (60%-80%) of dementia and th
 
 
 
-      Alzheimer’s disease
-
-
-  CICADA project
-  ACTS project
-
-
-
+      We have created and implemented various ontology for health informatics usage.
+Alzheimer's Disease Ontology
+We have built some AD/ADRD related ontologies and knowledge base including 
+    Drug Repurposing-oriented Alzheimer's Disease Ontology (DROADO), 
+    Dementia-Related Agitation Non-Pharmacological Treatment Ontology (DRANPTO), 
+    and ADCareOnto - an ontology for personalized home care f...
     </summary>
   
 

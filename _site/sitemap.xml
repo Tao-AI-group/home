@@ -18,7 +18,7 @@
 </url>
 <url>
 <loc>http://localhost:4000/home/categories/</loc>
-<lastmod>2024-04-10T09:51:57-05:00</lastmod>
+<lastmod>2024-04-10T16:54:07-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/home/publications/</loc>
@@ -26,15 +26,15 @@
 </url>
 <url>
 <loc>http://localhost:4000/home/archives/</loc>
-<lastmod>2024-04-10T09:51:57-05:00</lastmod>
+<lastmod>2024-04-10T16:54:07-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/home/tags/</loc>
-<lastmod>2024-04-10T09:51:57-05:00</lastmod>
+<lastmod>2024-04-10T16:54:07-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/home/about/</loc>
-<lastmod>2024-04-10T09:51:57-05:00</lastmod>
+<lastmod>2024-04-10T16:54:07-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/home/</loc>
@@ -44,6 +44,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/home/tags/phenotype/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/home/categories/sdoh/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/home/categories/ad/</loc>
