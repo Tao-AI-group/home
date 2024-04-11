@@ -4,7 +4,7 @@
   <id>http://localhost:4000/home/</id>
   <title>Tao AI Group</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-04-11T10:54:12-05:00</updated>
+  <updated>2024-04-11T16:00:08-05:00</updated>
   <author>
     <name>Jingna Feng</name>
     <uri>http://localhost:4000/home/</uri>
@@ -17,6 +17,46 @@
   <icon>/home/assets/img/favicons/favicon.ico</icon>
   <logo>/home/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>SDoH Ontology</title>
+    <link href="http://localhost:4000/home/posts/SDoH/" rel="alternate" type="text/html" title="SDoH Ontology" />
+    <published>2024-04-10T16:06:00-05:00</published>
+  
+    <updated>2024-04-10T16:06:00-05:00</updated>
+  
+    <id>http://localhost:4000/home/posts/SDoH/</id>
+    <content src="http://localhost:4000/home/posts/SDoH/" />
+    <author>
+      <name>Jingna Feng</name>
+    </author>
+
+  
+    
+    <category term="AD" />
+    
+    <category term="ontology" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Social Determinant of Health Ontology (SDoH)
+An ontology formally representing Social Determinants of Health factors and the interrelationship among them.
+
+Social Determinants of Health Ontology (SDoHO)  has been developed to comprehensively represent the concepts, hierarchies, and relations pertinent to SDoH factors. The standardization characteristics of ontology with 
+the comprehensive repre...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
