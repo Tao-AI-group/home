@@ -24,6 +24,19 @@ collections: [Grant, NIH, AHA]
 </p>
 
 <p>
+    <strong>MCC-AD: An end-to-end informatics framework to study Multiple Chronic Conditions (MCC)’s impact on Alzheimer’s disease using harmonized electronic health records</strong><br>
+    <strong>Project Period: </strong>2023 - 2027<br>
+    <strong>Agency: </strong>National Institutes of Health (NIH)<strong>MPI</strong>Xiaoqian Jiang (UT Health), Cui Tao (Mayo Clinic), Jiang Bian (UF)<br>
+    Visit <a href="https://mcc-ad.github.io/home/" target="_blank" rel="noopener noreferrer">MCC-AD</a> project page for details.
+</p>
+
+<p>
+    <strong>IMPACT MH: Coordinating Individually Measured Phenotypes to Advance Mental Health Research</strong><br>
+    <strong>Project Period: </strong>2024 - 2029<br>
+    <strong>Agency: </strong>National Institutes of Health (NIH)<strong>MPI</strong>Hua Xu (Yale), Cui Tao (Mayo Clinic), Yong Chen (UPenn)<br>
+</p>
+
+<p>
     <strong>Dynamic learning for post-vaccine event prediction using temporal information in VAERS</strong><br>
     <strong>Project Period: </strong>02/01/2017 - 01/31/2024<br>
     <strong>Agency: </strong>NIAID <strong>PI: </strong>Cui Tao (PI), Yong Chen (MPI)<br>
@@ -33,7 +46,7 @@ collections: [Grant, NIH, AHA]
 <p>
     <strong>VIOLIN 2.0: Vaccine Information and Ontology LInked kNowledgebase</strong><br>
     <strong>Project Period: </strong>8/19/2022 - 5/31/2027<br>
-    <strong>Agency: </strong>National Institutes of Health (NIH) - NIAID <strong>PI: </strong>Cui Tao, 
+    <strong>Agency: </strong>National Institutes of Health (NIH) - NIAID <strong>PI: </strong>Cui Tao (Mayo Clinic), 
     Oliver He (University of Michigan), Junguk Hur (University of North Dakota) (MPI)<br>
 
 </p>
@@ -47,32 +60,27 @@ collections: [Grant, NIH, AHA]
 <p>
     <strong>CICADA: Clinical informatics and computational approaches for drug-repositioning</strong><br>
     <strong>Project Period: </strong>08/01/2021-05/31/2023<br>
-    <strong>Agency: </strong>University of Pennsylvania/NIH <strong>PI: </strong>Cui Tao, Yong Chen (UPenn) (MPI)<br>
+    <strong>Agency: </strong>University of Pennsylvania/NIH <strong>PI: </strong>Cui Tao (Mayo Clinic), Yong Chen (UPenn) (MPI)<br>
 </p>
 
-<p>
-    <strong>Collaborative training of a new cadre of innovative cancer prevention researchers</strong><br>
-    <strong>Project Period: </strong>2021 - 2026<br>
-    <strong>Agency: </strong>CPRIT <strong>PI: </strong>Fernandez, Mullen, Swindell, Tao (MPI)<br>
-</p>
 
 <p>
     <strong>AI-based conversational agent for facilitating education and communication about HPV vaccination in children and adolescents</strong><br>
     <strong>Project Period: </strong>3/1/2022-2/28/2026<br>
-    <strong>Agency: </strong>CPRIT <strong>PI: </strong>Cui Tao<br>
+    <strong>Agency: </strong>CPRIT <strong>PI: </strong>Cui Tao (Mayo Clinic)<br>
 </p>
 
 <p>
     <strong>Artificial Intelligence-aided personalization on dual antiplatelet therapy for patients underwent coronary stent implementation using large-scale Electronic Health Records</strong><br>
     <strong>Project Period: </strong>12/01/2019- 11/30/2023<br>
-    <strong>Agency: </strong>AHA <strong>PI: </strong>Cui Tao<br>
+    <strong>Agency: </strong>AHA <strong>PI: </strong>Cui Tao (Mayo Clinic)<br>
 
 </p>
 
 <p>
     <strong>Facilitate observational studies of Alzheimer's Disease and Alzheimer's Disease-related dementias using ontology and Natural Language Processing</strong><br>
     <strong>Project Period: </strong>05/01/2021 - 04/30/2024<br>
-    <strong>Agency: </strong>NIH <strong>PI: </strong>Hua Xu, Cui Tao, and Hongfang Liu (Mayo Clinic) (MPI)<br>
+    <strong>Agency: </strong>NIH <strong>PI: </strong>Hua Xu (Yale), Cui Tao (Mayo Clinic), and Hongfang Liu (UT Health) (MPI)<br>
 </p>
 
 <p>
