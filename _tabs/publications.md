@@ -7,8 +7,6 @@ date: 2024-04-05 13:13 -0500
 tags: journals
 ---
 
-### Previous and Ongoing Publications
-
 #### Large Language Models (LLMs)
 
 1. **Li Y**, **Zhao J**, **Li M**, et al. RefAI: a GPT-powered retrieval-augmented generative tool for biomedical literature recommendation and summarization. *J Am Med Inform Assoc.* Published online June 10, 2024. doi:10.1093/jamia/ocae129
