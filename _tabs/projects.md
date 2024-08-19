@@ -22,7 +22,7 @@ For more on the project, visit <a href="https://tao-ai-group.github.io/ACTS/" te
 
 The “An end-to-end informatics framework to study Multiple Chronic Conditions (MCC)’s impact on Alzheimer’s Disease using harmonized electronic health records” project aims to revolutionize Alzheimer’s disease research. By enhancing the interoperability and utility of electronic health records (EHR), this collaborative effort led by UTHealth Houston, Mayo clinics, and University of Florida seeks to overcome the challenges posed by the lack of interoperability between different healthcare systems and the extensive manual annotation required for data extraction. This initiative promises to accelerate Alzheimer’s disease research, facilitating a deeper understanding of multi-chronic conditions associated with the disease, without compromising data integrity or patient privacy.
 
-For more on the project, visit <a href="https://mcc-ad.github.io/home/" text='_blank'>ACTS project website</a>.
+For more on the project, visit <a href="https://mcc-ad.github.io/home/" text='_blank'>MCC-AD project website</a>.
 
 ## Large Lanuage Model for Cardiovascular Diseses
 
