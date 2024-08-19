@@ -1,6 +1,6 @@
 ---
 icon: fa fa-circle
-order: 8
+order: 4
 title: Funding
 date: 2024-04-05 13:13 -0500
 tags: projects
