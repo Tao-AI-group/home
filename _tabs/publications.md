@@ -7,7 +7,7 @@ date: 2024-04-05 13:13 -0500
 tags: journals
 ---
 
-*This page contain selected papers from the lab, for a more comprehensive list of publication, please visit <a href="https://scholar.google.com/citations?user=M-GwHLcAAAAJ" text ="_blank">Dr. Cui Tao's Google Scholar</a>*
+*This page contains selected papers from the lab, for a more comprehensive list of publication, please visit <a href="https://scholar.google.com/citations?user=M-GwHLcAAAAJ" text ="_blank">Dr. Cui Tao's Google Scholar</a>*
 
 
 #### Large Language Models (LLMs)
